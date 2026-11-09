@@ -1,0 +1,11 @@
+mkdir fabric-saas-finance-analytics && cd fabric-saas-finance-analytics
+mkdir src fabric docs
+# copy saas_data_generator.py into src/ and README.md into this folder
+
+printf "output/\n__pycache__/\n.env\n*.csv\n" > .gitignore
+
+git init -b main
+git add .
+git commit -m "Add synthetic SaaS data generator and project README"
+git remote add origin https://github.com/<your-username>/fabric-saas-finance-analytics.git
+git push -u origin main
